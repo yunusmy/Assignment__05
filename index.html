@@ -21,6 +21,8 @@
           colors: {
             clifford: '#da373d',
             btnColor: 'rgb(180, 244, 97)',
+            bgNavbarColor: 'rgb(249, 247, 243)',
+            bgNavbarColors: 'rgba(245, 246, 242,0.5)',
           },
 
 
@@ -38,13 +40,34 @@
 
 <body class="lexends px-2 visited">
 
-  <header class="container mx-auto">
-    <div class="text-center my-12">
+  <header class="container mx-auto sticky top-0 bg-bgNavbarColors">
+    <!-- start Navbar -->
+
+    <div class="navbar bg-bgNavbarColor">
+      <div class="navbar-start">
+        <button class="btn bg-btnColor">Blog</button>
+      </div>
+      <div class="navbar-center  lg:flex">
+        <ul class="menu menu-horizontal">
+          <li><a><img src="assets/coin.png" alt=""></a></li>
+          <li><a class="text-2xl">Donate Bangladesh</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <button class="btn flex gap-1">
+          <img src="assets/coin.png" alt=""><span>677</span>BDT
+        </button>
+
+      </div>
+    </div>
+    <!-- end Navbar -->
+
+
+    <div class="text-center my-12 pb-2">
       <button class="btn bg-btnColor">Donate Now</button>
       <button class="btn">
         History
       </button>
-
     </div>
 
   </header>
@@ -55,7 +78,7 @@
         <img src="assets/feni.png" class="max-w-sm px-2 rounded-lg " />
         <div>
           <button class="btn flex gap-1">
-            <img src="assets/coin.png" alt=""><span>677</span>
+            <img src="assets/coin.png" alt=""><span>677</span>BDT
           </button>
 
           <h2 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
@@ -81,7 +104,7 @@
         <div>
 
           <button class="btn flex gap-1">
-            <img src="assets/coin.png" alt=""><span>677</span>
+            <img src="assets/coin.png" alt=""><span>677</span>BDT
           </button>
 
 
@@ -111,7 +134,7 @@
         <img src="assets/feni.png" class="max-w-sm px-2 rounded-lg " />
         <div>
           <button class="btn flex gap-1">
-            <img src="assets/coin.png" alt=""><span>677</span>
+            <img src="assets/coin.png" alt=""><span>677</span>BDT
           </button>
 
 
