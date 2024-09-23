@@ -6,3 +6,120 @@ blogButton.addEventListener('click', function (){
 });
 
 
+const donateButton = document.getElementById('donate-button');
+donateButton.addEventListener('click', function (event) {
+  event.preventDefault();
+
+
+  let donationAmount = document.getElementById('donation-amount').innerText;
+  let inputTaka = document.getElementById('input-taka').value;
+  let totalAmount = document.getElementById('total-amount').innerText; 
+
+
+  let inputTakas = parseFloat(inputTaka);
+  let donationAmounts = parseFloat(donationAmount);
+  let totalAmounts = parseFloat(totalAmount);
+
+
+  if (!isNaN(inputTakas) && inputTakas > 0 && inputTakas < totalAmounts) {
+  let totalAmountBox = totalAmounts - inputTakas;
+
+  document.getElementById('total-amount').innerText = totalAmountBox.toFixed(2);
+  
+  let donationAmountBox = inputTakas + donationAmounts;
+
+    document.getElementById('donation-amount').innerText = donationAmountBox.toFixed(2);
+    
+    document.getElementById('input-taka').value = '';
+
+    alert('Successfully');
+  
+  } else {
+       alert(' invalid Number! ')
+  }
+
+  
+})
+
+
+const donateButton2 = document.getElementById('donate-button2');
+
+donateButton2.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  let donationAmount2 = document.getElementById('donation-amount2').innerText;
+  let inputTaka2 = document.getElementById('input-taka2').value;
+  let totalAmount2 = document.getElementById('total-amount').innerText;
+
+  let inputTakas2 = parseFloat(inputTaka2);
+  let donationAmounts2 = parseFloat(donationAmount2);
+  let totalAmounts2 = parseFloat(totalAmount2);
+
+
+  if (!isNaN(inputTakas2) && inputTakas2 > 0 && inputTakas2 < totalAmounts2) {
+  
+
+
+  let totalAmountBox2 = totalAmounts2 - inputTakas2;
+
+  document.getElementById('total-amount').innerText = totalAmountBox2;
+  
+  let donationAmountBox2 = inputTakas2 + donationAmounts2;
+
+    document.getElementById('donation-amount2').innerText = donationAmountBox2;
+    
+     document.getElementById('input-taka2').value = '';
+
+
+    alert('Successfully');
+  
+  } else {
+       alert(' invalid Number! ')
+  }
+
+
+  
+
+
+})
+
+const donateButton3 = document.getElementById('donate-button3');
+
+donateButton3.addEventListener('click', function (en) {
+  en.preventDefault();
+
+  let donationAmount3 = document.getElementById('donation-amount3').innerText;
+  let inputTaka3 = document.getElementById('input-taka3').value;
+  let totalAmount3 = document.getElementById('total-amount').innerText;
+
+  let inputTakas3 = parseFloat(inputTaka3);
+  let donationAmounts3 = parseFloat(donationAmount3);
+  let totalAmounts3 = parseFloat(totalAmount3);
+
+
+  if (!isNaN(inputTakas3) && inputTakas3 > 0 && inputTakas3 < totalAmounts3) {
+  
+
+
+  let totalAmountBox3 = totalAmounts3 - inputTakas3;
+
+  document.getElementById('total-amount').innerText = totalAmountBox3;
+  
+  let donationAmountBox3 = inputTakas3 + donationAmounts3;
+
+    document.getElementById('donation-amount3').innerText = donationAmountBox3;
+    
+     document.getElementById('input-taka3').value = '';
+
+
+    alert('Successfully');
+  
+  } else {
+       alert(' invalid Number! ')
+  }
+
+
+  
+
+
+})
