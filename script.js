@@ -6,6 +6,39 @@ blogButton.addEventListener('click', function (){
 });
 
 
+const donateNowButton = document.getElementById('donnate-now-button');
+
+donateNowButton.addEventListener('click', function () {
+
+
+  const mainSection = document.getElementById('main-section');
+
+  mainSection.classList.remove('hidden');
+
+  const historySection = document.getElementById('history-section');
+  historySection.classList.add('hidden');
+
+  
+})
+
+
+const historyButton = document.getElementById('history-button');
+
+historyButton.addEventListener('click', function () {
+  const mainSection = document.getElementById('main-section');
+
+  mainSection.classList.add('hidden');
+
+const historySection = document.getElementById('history-section');
+  historySection.classList.remove('hidden');
+
+
+})
+
+
+
+
+
 const donateButton = document.getElementById('donate-button');
 donateButton.addEventListener('click', function (event) {
   event.preventDefault();
