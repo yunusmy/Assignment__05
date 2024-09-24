@@ -75,7 +75,7 @@ donateButton.addEventListener('click', function (event) {
     noakhaliNow.innerHTML = ` 
         <p class="text-xs text-gray-500">${inputTakas}  Taka is Donated for Donate for Flood at Noakhali, Bangladesh.
       </p>
-        <p class="text-xs text-gray-500">Data: ${new Date().toLocaleDateString()}</p>
+        <p class="text-xs text-gray-500">Data: ${new Date()}</p>
         
     
     `;
@@ -124,7 +124,7 @@ donateButton2.addEventListener('click', function (e) {
     noakhaliNow2.innerHTML = ` 
         <p class="text-xs text-gray-500">${inputTakas2}  Taka is Donated for Donate for Flood at Noakhali, Bangladesh.
       </p>
-        <p class="text-xs text-gray-500">Data: ${new Date().toLocaleDateString()}</p>
+        <p class="text-xs text-gray-500">Data: ${new Date()}</p>
         
     
     `;
@@ -181,7 +181,7 @@ donateButton3.addEventListener('click', function (en) {
     noakhaliNow3.innerHTML = ` 
         <p class="text-xs text-gray-500">${inputTakas3}  Taka is Donated for Donate for Flood at Noakhali, Bangladesh.
       </p>
-        <p class="text-xs text-gray-500">Data: ${new Date().toLocaleDateString()}</p>
+        <p class="text-xs text-gray-500">Data: ${new Date()}</p>
         
     
     `;
